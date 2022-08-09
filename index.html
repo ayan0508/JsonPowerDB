@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Student Database</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Enter the Student's Details</h2>
+            <form id="StuForm" method="post">
+                <div class="form-group">
+                    <span><label for="stdId">Student ID:</label> <label
+                            id="StdIdMsg">
+                        </label></span>
+                    <input type="text" class="form-control" onchange="getStd()"
+                        name="stdId" id="stdId"
+                        placeholder="Enter Student ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="stdName">Student's Name:</label>
+                    <input type="text" class="form-control" id="stdName"
+                        placeholder="Enter Student Name" name="stdName">
+                </div>
+                <div class="form-group">
+                    <label for="gdName">Guardian's Name:</label>
+                    <input type="text" class="form-control" id="gdName"
+                        placeholder="Enter Student's Guardian's Name"
+                        name="gdName">
+                </div>
+                <div class="form-group">
+                    <label for="stdEmail">Email:</label>
+                    <input type="email" class="form-control" id="stdEmail"
+                        placeholder="Enter Employee Email" name="stdEmail">
+                </div>
+                <div class="form-group">
+                    <label for="MobNo">Mobile Number:</label>
+                    <input type="MobNo" class="form-control" id="MobNo"
+                        placeholder="Enter Mobile no" name="MobNo">
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-primary" id="save"
+                        value="Save" onclick="saveData()" disabled>Save</button>
+                    <button type="button" class="btn btn-primary" id="update"
+                        value="Update" onclick="updateData();" disabled>Update</button>
+                    <button type="button" class="btn btn-primary" id="reset"
+                        value="Reset" onclick="resetData();" disabled>Reset</button>
+                </div>
+
+            </form>
+        </div>
+        <div>
+            <script
+                src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+        </div>
+    </body>
+</html>
