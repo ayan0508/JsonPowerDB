@@ -7,7 +7,7 @@
 ### 2. It is a serverless Support- so very fast to development.
 ### 3. Server Side native NOSQL-- best performance.
 
-# Release History : 09-08-2022,23.45
+# Release History : 09-08-2022,22.45
 
 # Scope of functionalities:
 ### 1. It create the new Student.
